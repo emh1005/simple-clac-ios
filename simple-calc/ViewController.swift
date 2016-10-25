@@ -12,14 +12,14 @@ class ViewController: UIViewController {
 
     @IBOutlet weak var label: UILabel!
     private var count: Int = 0
-    private var avgTotal: Int = 0
-    private var avg: Int = 0
+    private var avgTotal: Double = 0
+    private var avg: Double = 0
     private var fact: Int = 1
-    private var num1: Int = 0
-    private var num2: Int = 0
-    private var numMod: Int = 0
-    private var numMod2: Int = 0
-    private var result: Int = 0
+    private var num1: Double = 0
+    private var num2: Double = 0
+    private var numMod: Double = 0
+    private var numMod2: Double = 0
+    private var result: Double = 0
     private var num: String = ""
     private var temp: String = ""
     private var test: Bool = true
@@ -63,7 +63,8 @@ class ViewController: UIViewController {
         self.label.text = "\(num)"
     }
     
-    @IBAction func seven(_ sender: AnyObject) {        self.num += "7"
+    @IBAction func seven(_ sender: AnyObject) {
+        self.num += "7"
         self.label.text = "\(num)"
     }
     
@@ -82,15 +83,18 @@ class ViewController: UIViewController {
         self.label.text = "\(num)"
     }
     
+    @IBAction func point(_ sender: AnyObject) {
+        self.num += "."
+        self.label.text = "\(num)"
+    }
+    
     @IBAction func add(_ sender: AnyObject) {
         self.temp = "add"
         if num != "" && result == 0 {
-            self.num1 = Int(num)!
+            self.num1 = Double(num)!
             self.num = ""
             self.result += num1
             self.label.text = "\(result)"
-        } else if num == "" && result != 0 {
-            
         } else {
             self.label.text = "\(result)"
         }
@@ -99,7 +103,7 @@ class ViewController: UIViewController {
     @IBAction func sub(_ sender: AnyObject) {
         self.temp = "sub"
         if num != "" {
-            self.num1 = Int(num)!
+            self.num1 = Double(num)!
             self.num = ""
             self.result = num1 - result
             self.label.text = "\(result)"
@@ -115,7 +119,7 @@ class ViewController: UIViewController {
             test = false
         }
         if num != "" {
-            self.num1 = Int(num)!
+            self.num1 = Double(num)!
             self.num = ""
             self.result *= num1
             self.label.text = "\(result)"
@@ -131,7 +135,7 @@ class ViewController: UIViewController {
             test = false
         }
         if num != "" {
-            self.num1 = Int(num)!
+            self.num1 = Double(num)!
             self.num = ""
             if result == 0 {
                 self.label.text = "error"
@@ -147,7 +151,7 @@ class ViewController: UIViewController {
     @IBAction func mod(_ sender: AnyObject) {
         self.temp = "mod"
         if num != "" {
-            self.numMod = Int(num)!
+            self.numMod = Double(num)!
             self.num = ""
         } else {
             self.label.text = "\(result)"
@@ -163,7 +167,7 @@ class ViewController: UIViewController {
     @IBAction func avg(_ sender: AnyObject) {
         self.temp = "avg"
         if num != "" {
-            self.num1 = Int(num)!
+            self.num1 = Double(num)!
             self.avgTotal += num1
             self.count += 1
             self.num = ""
@@ -196,7 +200,7 @@ class ViewController: UIViewController {
         test = false
         if temp == "add" {
             if num != "" {
-                self.result += Int(num)!
+                self.result += Double(num)!
                 self.num = ""
                 self.label.text = "\(result)"
             } else {
@@ -204,7 +208,7 @@ class ViewController: UIViewController {
             }
         } else if temp == "sub" {
             if num != "" {
-                self.result -= Int(num)!
+                self.result -= Double(num)!
                 self.num = ""
                 self.label.text = "\(result)"
             } else {
@@ -212,7 +216,7 @@ class ViewController: UIViewController {
             }
         } else if temp == "mul" {
             if num != "" {
-                self.result *= Int(num)!
+                self.result *= Double(num)!
                 self.num = ""
                 self.label.text = "\(result)"
             } else {
@@ -220,7 +224,7 @@ class ViewController: UIViewController {
             }
         } else if temp == "div" {
             if num != "" {
-                self.result /= Int(num)!
+                self.result /= Double(num)!
                 self.num = ""
                 self.label.text = "\(result)"
             } else {
@@ -228,12 +232,13 @@ class ViewController: UIViewController {
             }
         } else if temp == "mod" {
             if num != "" {
-                    self.numMod2 = Int(num)!
+                    self.numMod2 = Double(num)!
                     self.num = ""
                 if numMod2 == 0 {
                     self.label.text = "error"
                 } else {
-                    self.result = numMod % numMod2
+                    let tempResult = Int(numMod) % Int(numMod2)
+                    self.result = Double(tempResult)
                     self.label.text = "\(result)"
                 }
             } else {
@@ -244,10 +249,10 @@ class ViewController: UIViewController {
             self.label.text = "\(self.count)"
         } else if temp == "avg" {
             if num != "" {
-                self.num1 = Int(num)!
+                self.num1 = Double(num)!
                 self.avgTotal += num1
                 self.count += 1
-                self.avg = avgTotal / count
+                self.avg = avgTotal / Double(count)
                 self.label.text = "\(self.avg)"
             } else {
                 self.label.text = ""
