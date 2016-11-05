@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		493DDEF61DC82FCC00B585EB /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 493DDEF51DC82FCC00B585EB /* TableViewController.swift */; };
 		496DA4EA1DBE761A004F84F9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 496DA4E91DBE761A004F84F9 /* AppDelegate.swift */; };
 		496DA4EC1DBE761A004F84F9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 496DA4EB1DBE761A004F84F9 /* ViewController.swift */; };
 		496DA4EF1DBE761A004F84F9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 496DA4ED1DBE761A004F84F9 /* Main.storyboard */; };
@@ -34,6 +35,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		493DDEF51DC82FCC00B585EB /* TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 		496DA4E61DBE761A004F84F9 /* simple-calc.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "simple-calc.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		496DA4E91DBE761A004F84F9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		496DA4EB1DBE761A004F84F9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -103,6 +105,7 @@
 				496DA4F01DBE761A004F84F9 /* Assets.xcassets */,
 				496DA4F21DBE761A004F84F9 /* LaunchScreen.storyboard */,
 				496DA4F51DBE761A004F84F9 /* Info.plist */,
+				493DDEF51DC82FCC00B585EB /* TableViewController.swift */,
 			);
 			path = "simple-calc";
 			sourceTree = "<group>";
@@ -263,6 +266,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				496DA4EC1DBE761A004F84F9 /* ViewController.swift in Sources */,
+				493DDEF61DC82FCC00B585EB /* TableViewController.swift in Sources */,
 				496DA4EA1DBE761A004F84F9 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -516,6 +520,7 @@
 				496DA5101DBE761B004F84F9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		496DA5111DBE761B004F84F9 /* Build configuration list for PBXNativeTarget "simple-calcTests" */ = {
 			isa = XCConfigurationList;
@@ -524,6 +529,7 @@
 				496DA5131DBE761B004F84F9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		496DA5141DBE761B004F84F9 /* Build configuration list for PBXNativeTarget "simple-calcUITests" */ = {
 			isa = XCConfigurationList;
@@ -532,6 +538,7 @@
 				496DA5161DBE761B004F84F9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

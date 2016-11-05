@@ -1,8 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -18,203 +22,236 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="21b-4b-N54">
-                                <frame key="frameInset" minX="16" minY="240" width="63" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="21b-4b-N54">
+                                <rect key="frame" x="9" y="329" width="63" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title="Count"/>
                                 <connections>
                                     <action selector="count:" destination="BYZ-38-t0r" eventType="primaryActionTriggered" id="TLX-kl-gyO"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fko-wu-Toy">
-                                <frame key="frameInset" minX="116" minY="240" width="49" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fko-wu-Toy">
+                                <rect key="frame" x="97" y="329" width="49" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title="Avg"/>
                                 <connections>
                                     <action selector="avg:" destination="BYZ-38-t0r" eventType="primaryActionTriggered" id="znf-rf-DRZ"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MC3-7z-wWk">
-                                <frame key="frameInset" minX="321" minY="240" width="30" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <state key="normal" title="+"/>
-                                <connections>
-                                    <action selector="add:" destination="BYZ-38-t0r" eventType="primaryActionTriggered" id="D9s-vp-iGl"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bb5-Z3-puv">
-                                <frame key="frameInset" minX="24" minY="325" width="30" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bb5-Z3-puv">
+                                <rect key="frame" x="25" y="410" width="30" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title="1"/>
                                 <connections>
                                     <action selector="one:" destination="BYZ-38-t0r" eventType="primaryActionTriggered" id="ojk-p4-oAo"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gtj-Wy-jxm">
-                                <frame key="frameInset" minX="125" minY="325" width="30" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gtj-Wy-jxm">
+                                <rect key="frame" x="107" y="410" width="30" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title="2"/>
                                 <connections>
                                     <action selector="two:" destination="BYZ-38-t0r" eventType="primaryActionTriggered" id="hKs-cL-CsX"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ITK-np-00L">
-                                <frame key="frameInset" minX="225" minY="325" width="30" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ITK-np-00L">
+                                <rect key="frame" x="187" y="410" width="30" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title="3"/>
                                 <connections>
                                     <action selector="three:" destination="BYZ-38-t0r" eventType="primaryActionTriggered" id="N5h-ce-D2Y"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nYF-a6-VWr">
-                                <frame key="frameInset" minX="321" minY="325" width="30" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nYF-a6-VWr">
+                                <rect key="frame" x="261" y="410" width="30" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title="-"/>
                                 <connections>
                                     <action selector="sub:" destination="BYZ-38-t0r" eventType="primaryActionTriggered" id="mCT-di-GSF"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cm5-5f-jGS">
-                                <frame key="frameInset" minX="24" minY="418" width="30" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cm5-5f-jGS">
+                                <rect key="frame" x="24" y="485" width="30" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title="4"/>
                                 <connections>
                                     <action selector="four:" destination="BYZ-38-t0r" eventType="primaryActionTriggered" id="wh8-pC-BXY"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VDR-6Y-B3Z">
-                                <frame key="frameInset" minX="125" minY="418" width="30" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VDR-6Y-B3Z">
+                                <rect key="frame" x="106" y="485" width="30" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title="5"/>
                                 <connections>
                                     <action selector="five:" destination="BYZ-38-t0r" eventType="primaryActionTriggered" id="mXh-u4-Z3E"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Ug-h4-nTh">
-                                <frame key="frameInset" minX="225" minY="418" width="30" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Ug-h4-nTh">
+                                <rect key="frame" x="186" y="485" width="30" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title="6"/>
                                 <connections>
                                     <action selector="six:" destination="BYZ-38-t0r" eventType="primaryActionTriggered" id="j7a-fD-Xzb"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dsP-TG-Onh">
-                                <frame key="frameInset" minX="321" minY="418" width="30" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dsP-TG-Onh">
+                                <rect key="frame" x="261" y="485" width="30" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title="*"/>
                                 <connections>
                                     <action selector="mul:" destination="BYZ-38-t0r" eventType="primaryActionTriggered" id="vcC-UZ-3iq"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7w8-UL-ha8">
-                                <frame key="frameInset" minX="24" minY="514" width="30" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7w8-UL-ha8">
+                                <rect key="frame" x="24" y="554" width="30" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title="7"/>
                                 <connections>
                                     <action selector="seven:" destination="BYZ-38-t0r" eventType="primaryActionTriggered" id="aZt-qw-caa"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KZ5-h2-bmy">
-                                <frame key="frameInset" minX="125" minY="514" width="30" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KZ5-h2-bmy">
+                                <rect key="frame" x="107" y="554" width="30" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title="8"/>
                                 <connections>
                                     <action selector="eight:" destination="BYZ-38-t0r" eventType="primaryActionTriggered" id="hE7-4t-FjA"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EwT-MR-Eep">
-                                <frame key="frameInset" minX="225" minY="514" width="30" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EwT-MR-Eep">
+                                <rect key="frame" x="186" y="554" width="30" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title="9"/>
                                 <connections>
                                     <action selector="nine:" destination="BYZ-38-t0r" eventType="primaryActionTriggered" id="gaY-PO-WTH"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rph-Xp-HSg">
-                                <frame key="frameInset" minX="321" minY="514" width="30" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rph-Xp-HSg">
+                                <rect key="frame" x="261" y="554" width="30" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title="/"/>
                                 <connections>
                                     <action selector="div:" destination="BYZ-38-t0r" eventType="primaryActionTriggered" id="Kbd-Vz-Ord"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hqC-4r-bOr">
-                                <frame key="frameInset" minX="24" minY="600" width="30" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hqC-4r-bOr">
+                                <rect key="frame" x="24" y="617" width="30" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title="0"/>
                                 <connections>
                                     <action selector="zero:" destination="BYZ-38-t0r" eventType="primaryActionTriggered" id="6fK-gy-NIA"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uzq-Vx-JPJ">
-                                <frame key="frameInset" minX="321" minY="600" width="30" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uzq-Vx-JPJ">
+                                <rect key="frame" x="261" y="617" width="30" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title="%"/>
                                 <connections>
                                     <action selector="mod:" destination="BYZ-38-t0r" eventType="primaryActionTriggered" id="VV9-cs-jyU"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xhO-ge-ACg">
-                                <frame key="frameInset" minX="63" minY="82" width="288" height="64"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gIk-br-Q21">
-                                <frame key="frameInset" minX="221" minY="240" width="39" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gIk-br-Q21">
+                                <rect key="frame" x="191" y="329" width="39" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title="Fact"/>
                                 <connections>
                                     <action selector="fact:" destination="BYZ-38-t0r" eventType="primaryActionTriggered" id="5LH-HD-807"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iRz-MD-mq3">
-                                <frame key="frameInset" minX="225" minY="600" width="30" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iRz-MD-mq3">
+                                <rect key="frame" x="186" y="617" width="30" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title="="/>
                                 <connections>
                                     <action selector="equal:" destination="BYZ-38-t0r" eventType="primaryActionTriggered" id="my2-e5-lHW"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wpj-Oq-nJu">
-                                <frame key="frameInset" minX="125" minY="600" width="30" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wpj-Oq-nJu">
+                                <rect key="frame" x="107" y="617" width="30" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <state key="normal" title="."/>
                                 <connections>
                                     <action selector="point:" destination="BYZ-38-t0r" eventType="primaryActionTriggered" id="WNJ-nT-mvV"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8R1-Td-GCt">
-                                <frame key="frameInset" minX="16" minY="99" width="36" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8R1-Td-GCt">
+                                <rect key="frame" x="240" y="197" width="36" height="30"/>
                                 <state key="normal" title="Clear"/>
                                 <connections>
                                     <action selector="clear:" destination="BYZ-38-t0r" eventType="primaryActionTriggered" id="QT9-7r-sz2"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iaT-8S-jmi">
+                                <rect key="frame" x="309" y="197" width="50" height="30"/>
+                                <state key="normal" title="History"/>
+                                <connections>
+                                    <segue destination="EHc-21-Udd" kind="presentation" id="tdo-Gm-m5n"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MC3-7z-wWk">
+                                <rect key="frame" x="261" y="329" width="30" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="+"/>
+                                <connections>
+                                    <action selector="add:" destination="BYZ-38-t0r" eventType="primaryActionTriggered" id="D9s-vp-iGl"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xhO-ge-ACg">
+                                <rect key="frame" x="25" y="78" width="288" height="64"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="uzq-Vx-JPJ" secondAttribute="bottom" constant="20" id="17H-x9-cWp"/>
+                            <constraint firstItem="EwT-MR-Eep" firstAttribute="leading" secondItem="KZ5-h2-bmy" secondAttribute="trailing" constant="45" id="5Ky-8J-nSk"/>
+                            <constraint firstItem="iRz-MD-mq3" firstAttribute="leading" secondItem="Wpj-Oq-nJu" secondAttribute="trailing" constant="45" id="6eg-M1-bHU"/>
+                            <constraint firstItem="ITK-np-00L" firstAttribute="top" secondItem="gIk-br-Q21" secondAttribute="bottom" constant="30" id="BpA-x7-2m1"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="iRz-MD-mq3" secondAttribute="bottom" constant="20" id="Dpg-kI-NjX"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="hqC-4r-bOr" secondAttribute="bottom" constant="20" id="Eve-ZF-0uF"/>
+                            <constraint firstItem="iaT-8S-jmi" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" constant="10" id="Fbg-LX-HNt"/>
+                            <constraint firstItem="Rph-Xp-HSg" firstAttribute="leading" secondItem="EwT-MR-Eep" secondAttribute="trailing" constant="45" id="JSf-yw-NHh"/>
+                            <constraint firstItem="ITK-np-00L" firstAttribute="leading" secondItem="gtj-Wy-jxm" secondAttribute="trailing" constant="45" id="KRm-Zz-je1"/>
+                            <constraint firstItem="VDR-6Y-B3Z" firstAttribute="top" secondItem="gtj-Wy-jxm" secondAttribute="bottom" constant="30" id="KVw-hR-tSP"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Wpj-Oq-nJu" secondAttribute="bottom" constant="20" id="LAR-ZO-ay9"/>
+                            <constraint firstItem="hqC-4r-bOr" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="8" id="MAx-bC-z8b"/>
+                            <constraint firstItem="7w8-UL-ha8" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="8" id="NnF-sf-8Cc"/>
+                            <constraint firstItem="bb5-Z3-puv" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="8" id="Oxv-Yt-iqn"/>
+                            <constraint firstItem="4Ug-h4-nTh" firstAttribute="top" secondItem="ITK-np-00L" secondAttribute="bottom" constant="30" id="Pxu-dU-5pi"/>
+                            <constraint firstItem="iaT-8S-jmi" firstAttribute="leading" secondItem="8R1-Td-GCt" secondAttribute="trailing" constant="30" id="QY3-Gx-lOD"/>
+                            <constraint firstItem="Rph-Xp-HSg" firstAttribute="top" secondItem="dsP-TG-Onh" secondAttribute="bottom" constant="30" id="SPd-vo-BOV"/>
+                            <constraint firstItem="7w8-UL-ha8" firstAttribute="top" secondItem="cm5-5f-jGS" secondAttribute="bottom" constant="30" id="Txs-bd-Se8"/>
+                            <constraint firstItem="KZ5-h2-bmy" firstAttribute="top" secondItem="VDR-6Y-B3Z" secondAttribute="bottom" constant="30" id="UGv-gY-Laf"/>
+                            <constraint firstItem="cm5-5f-jGS" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="8" id="Vj2-nL-k8d"/>
+                            <constraint firstItem="EwT-MR-Eep" firstAttribute="top" secondItem="4Ug-h4-nTh" secondAttribute="bottom" constant="30" id="W5T-qy-fTl"/>
+                            <constraint firstItem="fko-wu-Toy" firstAttribute="leading" secondItem="21b-4b-N54" secondAttribute="trailing" constant="25" id="WFq-s5-eDz"/>
+                            <constraint firstItem="nYF-a6-VWr" firstAttribute="leading" secondItem="ITK-np-00L" secondAttribute="trailing" constant="45" id="Wf8-t7-OZs"/>
+                            <constraint firstItem="gtj-Wy-jxm" firstAttribute="top" secondItem="fko-wu-Toy" secondAttribute="bottom" constant="30" id="X9h-m1-IyL"/>
+                            <constraint firstItem="21b-4b-N54" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="8" id="YHB-NO-0Ny"/>
+                            <constraint firstItem="iRz-MD-mq3" firstAttribute="top" secondItem="EwT-MR-Eep" secondAttribute="bottom" constant="30" id="ZME-J3-Wm6"/>
+                            <constraint firstItem="8R1-Td-GCt" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="150" id="a2V-WO-5hM"/>
+                            <constraint firstItem="gIk-br-Q21" firstAttribute="leading" secondItem="fko-wu-Toy" secondAttribute="trailing" constant="45" id="cvF-zw-EVp"/>
+                            <constraint firstItem="uzq-Vx-JPJ" firstAttribute="top" secondItem="Rph-Xp-HSg" secondAttribute="bottom" constant="30" id="dQx-q5-clQ"/>
+                            <constraint firstItem="MC3-7z-wWk" firstAttribute="leading" secondItem="gIk-br-Q21" secondAttribute="trailing" constant="30" id="dfG-qQ-2Z2"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="xhO-ge-ACg" secondAttribute="trailing" constant="10" id="e4y-nH-UNo"/>
+                            <constraint firstItem="cm5-5f-jGS" firstAttribute="top" secondItem="bb5-Z3-puv" secondAttribute="bottom" constant="30" id="eC1-e9-6Wz"/>
+                            <constraint firstItem="xhO-ge-ACg" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="20" id="fi8-WO-UQf"/>
+                            <constraint firstItem="hqC-4r-bOr" firstAttribute="top" secondItem="7w8-UL-ha8" secondAttribute="bottom" constant="30" id="h9f-ns-vzW"/>
+                            <constraint firstItem="Wpj-Oq-nJu" firstAttribute="leading" secondItem="hqC-4r-bOr" secondAttribute="trailing" constant="45" id="iCc-Ex-kqb"/>
+                            <constraint firstItem="KZ5-h2-bmy" firstAttribute="leading" secondItem="7w8-UL-ha8" secondAttribute="trailing" constant="45" id="mnA-DO-GQO"/>
+                            <constraint firstItem="bb5-Z3-puv" firstAttribute="top" secondItem="21b-4b-N54" secondAttribute="bottom" constant="30" id="oll-yj-BGW"/>
+                            <constraint firstItem="Wpj-Oq-nJu" firstAttribute="bottom" secondItem="KZ5-h2-bmy" secondAttribute="bottom" constant="66" id="pOG-r5-534"/>
+                            <constraint firstItem="uzq-Vx-JPJ" firstAttribute="leading" secondItem="iRz-MD-mq3" secondAttribute="trailing" constant="45" id="rtB-AK-3d7"/>
+                            <constraint firstItem="gtj-Wy-jxm" firstAttribute="leading" secondItem="bb5-Z3-puv" secondAttribute="trailing" constant="45" id="rur-yj-agb"/>
+                            <constraint firstItem="dsP-TG-Onh" firstAttribute="top" secondItem="nYF-a6-VWr" secondAttribute="bottom" constant="30" id="v0z-tI-IjY"/>
+                            <constraint firstItem="dsP-TG-Onh" firstAttribute="leading" secondItem="4Ug-h4-nTh" secondAttribute="trailing" constant="45" id="vSM-UJ-BF8"/>
+                            <constraint firstItem="4Ug-h4-nTh" firstAttribute="leading" secondItem="VDR-6Y-B3Z" secondAttribute="trailing" constant="45" id="wAM-5v-kJ6"/>
+                            <constraint firstItem="VDR-6Y-B3Z" firstAttribute="leading" secondItem="cm5-5f-jGS" secondAttribute="trailing" constant="45" id="yS8-Nv-3Nj"/>
+                            <constraint firstItem="iaT-8S-jmi" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="150" id="z18-4c-2DN"/>
+                            <constraint firstItem="nYF-a6-VWr" firstAttribute="top" secondItem="MC3-7z-wWk" secondAttribute="bottom" constant="30" id="zd4-We-qed"/>
+                        </constraints>
                     </view>
                     <connections>
                         <outlet property="label" destination="xhO-ge-ACg" id="1gK-22-OVh"/>
@@ -222,6 +259,58 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="136.28185907046478"/>
+        </scene>
+        <!--Root View Controller-->
+        <scene sceneID="HF3-cl-eWI">
+            <objects>
+                <tableViewController id="I8p-4z-RRj" customClass="TableViewController" customModule="simple_calc" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="7AV-km-DJT">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="ToDoCell" selectionStyle="default" indentationWidth="10" reuseIdentifier="historyCell" id="KDk-6S-VvG">
+                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KDk-6S-VvG" id="fJF-uo-cl8">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="I8p-4z-RRj" id="zLx-XB-rlL"/>
+                            <outlet property="delegate" destination="I8p-4z-RRj" id="r5I-FE-VGf"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Root View Controller" id="Ltp-ZD-GJU">
+                        <barButtonItem key="rightBarButtonItem" title="Return" id="22j-VM-KC6">
+                            <connections>
+                                <action selector="dimsiss:" destination="I8p-4z-RRj" id="Zbk-aV-6gZ"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jdf-n2-tXs" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1087" y="-568"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="xUK-H6-GID">
+            <objects>
+                <navigationController id="EHc-21-Udd" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="sdQ-Fh-ea4">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="I8p-4z-RRj" kind="relationship" relationship="rootViewController" id="srh-Tr-8dL"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Z3n-8I-DvR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137" y="-568"/>
         </scene>
     </scenes>
 </document>

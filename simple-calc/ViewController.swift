@@ -23,6 +23,7 @@ class ViewController: UIViewController {
     private var num: String = ""
     private var temp: String = ""
     private var test: Bool = true
+    private var history: String = ""
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -35,65 +36,77 @@ class ViewController: UIViewController {
     }
     @IBAction func one(_ sender: AnyObject) {
         self.num += "1"
+        self.history += "1"
         self.label.text = "\(num)"
     }
 
     @IBAction func two(_ sender: AnyObject) {
         self.num += "2"
+        self.history += "2"
         self.label.text = "\(num)"
     }
     
     @IBAction func three(_ sender: AnyObject) {
         self.num += "3"
+        self.history += "3"
         self.label.text = "\(num)"
     }
     
     @IBAction func four(_ sender: AnyObject) {
         self.num += "4"
+        self.history += "4"
         self.label.text = "\(num)"
     }
     
     @IBAction func five(_ sender: AnyObject) {
         self.num += "5"
+        self.history += "5"
         self.label.text = "\(num)"
     }
     
     @IBAction func six(_ sender: AnyObject) {
         self.num += "6"
+        self.history += "6"
         self.label.text = "\(num)"
     }
     
     @IBAction func seven(_ sender: AnyObject) {
         self.num += "7"
+        self.history += "7"
         self.label.text = "\(num)"
     }
     
     @IBAction func eight(_ sender: AnyObject) {
         self.num += "8"
+        self.history += "8"
         self.label.text = "\(num)"
     }
     
     @IBAction func nine(_ sender: AnyObject) {
         self.num += "9"
+        self.history += "9"
         self.label.text = "\(num)"
     }
     
     @IBAction func zero(_ sender: AnyObject) {
         self.num += "0"
+        self.history += "0"
         self.label.text = "\(num)"
     }
     
     @IBAction func point(_ sender: AnyObject) {
         self.num += "."
+        self.history += "."
         self.label.text = "\(num)"
     }
     
     @IBAction func add(_ sender: AnyObject) {
         self.temp = "add"
-        if num != "" && result == 0 {
+        if num != "" {
             self.num1 = Double(num)!
             self.num = ""
             self.result += num1
+            self.history += " + "
             self.label.text = "\(result)"
         } else {
             self.label.text = "\(result)"
@@ -106,6 +119,7 @@ class ViewController: UIViewController {
             self.num1 = Double(num)!
             self.num = ""
             self.result = num1 - result
+            self.history += " - "
             self.label.text = "\(result)"
         } else {
             self.label.text = "\(result)"
@@ -122,6 +136,7 @@ class ViewController: UIViewController {
             self.num1 = Double(num)!
             self.num = ""
             self.result *= num1
+            self.history += " * "
             self.label.text = "\(result)"
         } else {
             self.label.text = "\(result)"
@@ -141,6 +156,7 @@ class ViewController: UIViewController {
                 self.label.text = "error"
             } else {
                 self.result = num1 / result
+                self.history += " / "
                 self.label.text = "\(result)"
             }
         } else {
@@ -153,6 +169,7 @@ class ViewController: UIViewController {
         if num != "" {
             self.numMod = Double(num)!
             self.num = ""
+            self.history += " % "
         } else {
             self.label.text = "\(result)"
         }
@@ -162,6 +179,7 @@ class ViewController: UIViewController {
         self.temp = "count"
         self.count += 1
         self.num = ""
+        self.history += " count "
     }
     
     @IBAction func avg(_ sender: AnyObject) {
@@ -171,6 +189,7 @@ class ViewController: UIViewController {
             self.avgTotal += num1
             self.count += 1
             self.num = ""
+            self.history += " avg "
         } else {
             self.label.text = ""
         }
@@ -178,6 +197,7 @@ class ViewController: UIViewController {
 
     @IBAction func fact(_ sender: AnyObject) {
         self.temp = "fact"
+        self.history += "fact"
     }
     
     @IBAction func clear(_ sender: AnyObject) {
@@ -194,6 +214,7 @@ class ViewController: UIViewController {
         self.temp = ""
         self.test = true
         self.label.text = ""
+        self.history = ""
     }
     
     @IBAction func equal(_ sender: AnyObject) {
@@ -246,6 +267,7 @@ class ViewController: UIViewController {
             }
         } else if temp == "count" {
             self.count += 1
+            self.result = Double(self.count)
             self.label.text = "\(self.count)"
         } else if temp == "avg" {
             if num != "" {
@@ -253,6 +275,7 @@ class ViewController: UIViewController {
                 self.avgTotal += num1
                 self.count += 1
                 self.avg = avgTotal / Double(count)
+                self.result = self.avg
                 self.label.text = "\(self.avg)"
             } else {
                 self.label.text = ""
@@ -262,13 +285,23 @@ class ViewController: UIViewController {
                 for i in 1...Int(num)! {
                     fact *= i
                 }
+                self.result = Double(self.fact)
                 self.label.text = "\(self.fact)"
                 num = ""
             } else {
                 self.label.text = ""
             }
         }
-
+        
+        self.history += " = \(result)"
+        let defaults = UserDefaults.standard
+        var histories = defaults.array(forKey: "history")
+        if histories == nil {
+            histories = Array()
+        }
+        histories!.append(history)
+        defaults.set(histories, forKey: "history")
+        self.history = ""
     }
 
 }

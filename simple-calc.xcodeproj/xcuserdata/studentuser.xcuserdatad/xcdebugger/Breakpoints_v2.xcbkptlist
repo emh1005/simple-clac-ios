@@ -10,11 +10,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "simple-calc/ViewController.swift"
-            timestampString = "499115210.075673"
+            timestampString = "499663741.135076"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "276"
-            endingLineNumber = "276">
+            startingLineNumber = "309"
+            endingLineNumber = "309">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -24,11 +24,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "simple-calc/ViewController.swift"
-            timestampString = "499115075.447289"
+            timestampString = "499659077.897998"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "93"
-            endingLineNumber = "93"
+            startingLineNumber = "105"
+            endingLineNumber = "105"
             landmarkName = "add(_:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -40,11 +40,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "simple-calc/ViewController.swift"
-            timestampString = "499115165.904184"
+            timestampString = "499659077.897998"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "98"
-            endingLineNumber = "98"
+            startingLineNumber = "111"
+            endingLineNumber = "111"
             landmarkName = "add(_:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -56,12 +56,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "simple-calc/ViewController.swift"
-            timestampString = "499115165.904184"
+            timestampString = "499663080.96297"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "180"
-            endingLineNumber = "180"
-            landmarkName = "fact(_:)"
+            startingLineNumber = "288"
+            endingLineNumber = "288"
+            landmarkName = "equal(_:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
